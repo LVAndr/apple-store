@@ -1,0 +1,68 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    max-width: 100%
+}
+body{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 21px;
+    line-height: 1.23;
+    color: #1d1d1f;
+    background-color: #fafafa;
+}
+.container{
+    max-width: 1700px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/*Кнопка*/
+.btn{
+    font-size: 21px;
+    color: #0066cc;
+    padding: 10px;
+}
+h1, h2{
+    font-size: 56px;
+    line-height: 1.1;
+    color: #f5f5f7;
+}
+h2{
+    font-size: 28px;
+    line-height: 1.1;
+    color: #f5f5f7;
+}
+
+/*Шапка*/
+.header{
+    background-color: rgba(22, 22, 23, .8);
+    padding: 10px 0;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1024px;
+}
+/*Лого*/
+.logo{
+    color: rgba(255, 255, 255, .8);
+}
+/*Навігація*/
+.navigation{
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navigation>.btn{
+    font-size: 14px;
+    color: rgba(255, 255, 255, .8);
+}
