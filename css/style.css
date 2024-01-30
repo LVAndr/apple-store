@@ -18,6 +18,12 @@ body{
     color: #1d1d1f;
     background-color: #fafafa;
 }
+/*Відміна стилів*/
+.list-reset{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 .container{
     max-width: 1700px;
     padding: 0 15px;
@@ -28,13 +34,28 @@ body{
     font-size: 21px;
     color: #0066cc;
     padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    transition: color .4s;
+}
+.btn:hover{
+    color: #0c71e0;
+}
+.btn:active{
+    color: #0061d2;
 }
 h1, h2{
+    margin: 0;
+    padding: 0;
     font-size: 56px;
     line-height: 1.1;
-    color: #f5f5f7;
+    /*color: #f5f5f7;*/
+    color: #161617CC;
 }
-h2{
+h3{
+    margin: 0;
+    padding: 0;
     font-size: 28px;
     line-height: 1.1;
     color: #f5f5f7;
@@ -65,4 +86,15 @@ h2{
 .navigation>.btn{
     font-size: 14px;
     color: rgba(255, 255, 255, .8);
+}
+.navigation>.btn:hover{
+    color: rgba(255, 255, 255, 1);
+}
+.navigation>.btn:hover{
+    color: rgb(229, 229, 229, 1);
+}
+
+/*Контейнер для сторінок*/
+.page-container{
+
 }

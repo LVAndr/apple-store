@@ -33,6 +33,42 @@ function getHeader(){
     header.append(container);
     return header;
 }
-const header = getHeader();
 
-app.append(header);
+/*Контейнер для сторінок*/
+function getPageContainer (){
+    const main = document.createElement('main');
+    main.classList.add('main', 'page-container')
+    return main;
+}
+
+function getMainTitle(text){
+    const title = document.createElement('h1');
+    title.classList.add('main-title');
+    title.textContent = text;
+    return title;
+}
+/*Карточка категории*/
+function getCategoriesCard(image, title){
+
+}
+/*Головна сторінка*/
+function getMainPage(){
+    const section = document.createElement('section');
+    section.classList.add('product-categories', 'section', 'container');
+
+    const mainTitle = getMainTitle('Категорії товарів');
+
+    const productCategoriesList = document.createElement('ul');
+    productCategoriesList.classList.add('list-reset', 'categories-list');
+
+    section.append(mainTitle, productCategoriesList)
+    return section;
+}
+
+const header = getHeader();
+const pageContainer = getPageContainer();
+
+const mainPage = getMainPage();
+pageContainer.append(mainPage);
+
+app.append(header, pageContainer);
