@@ -26,7 +26,7 @@ body{
 }
 .container{
     max-width: 1700px;
-    padding: 0 15px;
+    padding: 0 5%;
     margin: 0 auto;
 }
 /*Кнопка*/
@@ -45,7 +45,11 @@ body{
 .btn:active{
     color: #0061d2;
 }
-h1, h2{
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+h1{
     margin: 0;
     padding: 0;
     font-size: 56px;
@@ -53,12 +57,16 @@ h1, h2{
     /*color: #f5f5f7;*/
     color: #161617CC;
 }
+h2{
+    font-size: 48px;
+}
 h3{
     margin: 0;
     padding: 0;
     font-size: 28px;
     line-height: 1.1;
-    color: #f5f5f7;
+    /*color: #f5f5f7;*/
+    color: #161617CC;
 }
 
 /*Шапка*/
@@ -98,3 +106,36 @@ h3{
 .page-container{
 
 }
+/*Секції*/
+.section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*Список категорий*/
+.categories-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/*Карточка категорий*/
+.categories-list__item{
+    padding: 18px 8px;
+    overflow: hidden;
+    max-width: 136px;
+}
+.categories-list__img{
+    padding-bottom: 16px;
+}
+.categories-list__title{
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+/*Список товаров*/
+.products-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+/*Карточка товара*/
