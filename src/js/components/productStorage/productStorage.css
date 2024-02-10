@@ -1,0 +1,24 @@
+.product__storage-container{
+    padding-top: 24px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.product__storage-sizes{
+    display: flex;
+}
+.product__storage-size{
+    display: flex;
+    padding: 4px 6px;
+    border: 1px solid #565555;
+    color: #1d1d1f;
+    border-radius: 8px;
+}
+.product__storage-size:not(:last-child){
+    margin-right: 12px;
+}

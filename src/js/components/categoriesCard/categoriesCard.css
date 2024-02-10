@@ -1,0 +1,28 @@
+/*Карточка категорий*/
+.categories-list__item{
+    overflow: hidden;
+    max-width: 136px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.categories-link__item{
+    display: block;
+    padding: 18px 8px;
+    border-radius: 0;
+}
+.categories-link__item.active{
+    border-radius: 8px;
+    background-color: rgba(175, 175, 175, 0.2);
+
+}
+.categories-list__img{
+    display: block;
+    user-select: none;
+    margin-bottom: 16px;
+}
+
+.categories-list__title{
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+.btn-reset {
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+.btn__primary-large{
+    user-select: none;
+    padding: 17px 30px;
+    background: #0071e3;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.17648;
+    text-align: center;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1px;
+}
+.btn__primary{
+    user-select: none;
+    padding: 8px 16px;
+    background: #0071e3;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid transparent;
+    transition: background-color .4s, box-shadow .4s;
+}
+.btn__primary:hover, .btn__primary-large:hover{
+    background-color: #0077ed;
+}
+.btn__primary:active, .btn__primary-large:active{
+    background-color: #006edb;
+}
+.btn__primary:focus, .btn__primary-large:focus{
+    box-shadow:  0 0 0 3px white, 0 0 0 5px #0071E3;
+}
+
+.btn__link{
+    display: inline-block;
+    background: none;
+    color: #0066cc;
+    text-decoration: none;
+    transition: color .4s, text-decoration 4s;
+}
+.btn__link:hover{
+    text-decoration: underline;
+    color: #0077ed;
+}

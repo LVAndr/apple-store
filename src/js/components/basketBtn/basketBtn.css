@@ -1,0 +1,7 @@
+.basket-btn{
+    display: flex;
+    align-items: center;
+}
+.basket-btn svg{
+    align-self: center;
+}

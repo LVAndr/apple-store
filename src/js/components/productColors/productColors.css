@@ -1,0 +1,32 @@
+.product__color-container{
+    padding-top: 24px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    color: #04618a;
+}
+.product__colors{
+    display: flex;
+
+    /*background-color: #0066cc;*/
+}
+.color{
+    width: 14px;
+    height: 14px;
+    padding: 4px;
+    border-radius: 50%;
+}
+.color.active{
+    /*border: 2px solid ;*/
+    box-shadow:
+            0 0 0 4px #fafafa,
+            0 0 0 5px #d2d2d7;
+}
+.color:not(:last-child){
+    margin-right: 14px;
+}
