@@ -1,12 +1,24 @@
 /*Список товаров*/
 .products-wrapper{
+    display: flex;
     padding: 30px 0;
 }
 .products-section__container{
     margin: 0 auto;
 }
+.filters__content{
+    padding-right: 0;
+    transition: padding-right .5s;
+
+}
+.filters__content.active{
+    padding-right: 20px;
+}
 .products-list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+}
+.products-list.active{
+    grid-template-columns: repeat(3, 1fr);
 }

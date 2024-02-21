@@ -15,6 +15,68 @@ import appleTv from '/src/assets/img/apple-tv.png'
 import homePod from '/src/assets/img/home-pod.png'
 /*--------------------------------*/
 
+const categoriesList =  [
+    {
+        id: 0,
+        image : appleAll,
+        title: 'All'
+    },
+    {
+        id: 1,
+        image : macImg,
+        title: 'Mac'
+    },
+    {
+        id: 2,
+        image : iphoneImg,
+        title: 'iPhone'
+    },
+    {
+        id: 3,
+        image : IpadImg,
+        title: 'iPad'
+    },
+    {
+        id: 4,
+        image : appleWatchImg,
+        title: 'AppleWatch'
+    },
+    {
+        id: 5,
+        image : airPodsImg,
+        title: 'AirPods'
+    },
+    {
+        id: 6,
+        image : airTag,
+        title: 'AirTag'
+    },
+    {
+        id: 7,
+        image : appleTv,
+        title: 'Apple TV 4k'
+    },
+    {
+        id: 8,
+        image : homePod,
+        title: 'HomePod'
+    },
+    {
+        id: 9,
+        image : accessImg,
+        title: 'Accessories'
+    },
+]
+
+
+export const categoriesStore = {
+    categoriesList,
+    activeCategory: categoriesList[0],
+}
+
+
+
+
 /*Секция список категорий*/
 export function getCategoriesSection(){
     const section = document.createElement('section');
@@ -27,16 +89,8 @@ export function getCategoriesSection(){
 
 
     productCategoriesList.append(
-        getCategoriesCard(appleAll, 'All'),
-        getCategoriesCard(macImg, 'Mac'),
-        getCategoriesCard(iphoneImg, 'iPhone'),
-        getCategoriesCard(IpadImg, 'iPad'),
-        getCategoriesCard(appleWatchImg, 'AppleWatch'),
-        getCategoriesCard(airPodsImg, 'AirPods'),
-        getCategoriesCard(airTag, 'AirTag'),
-        getCategoriesCard(appleTv, 'Apple TV 4k'),
-        getCategoriesCard(homePod, 'HomePod'),
-        getCategoriesCard(accessImg, 'Accessories'),
+        ...categoriesStore.categoriesList.map(i =>
+            getCategoriesCard(i.image, i.title, i))
     )
 
     section.append(categoriesTitle, productCategoriesList)

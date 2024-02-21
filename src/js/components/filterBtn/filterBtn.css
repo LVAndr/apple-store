@@ -1,0 +1,16 @@
+.filter__btn-content{
+    display: inline-flex;
+    align-items: center;
+}
+.filter__btn{
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    color: #6e6e73;
+}
+.filter-icon{
+
+}
+.filter-img{
+    margin-right: 3px;
+}

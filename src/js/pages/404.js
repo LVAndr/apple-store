@@ -13,7 +13,7 @@ export function get404Page() {
     mainTitle.classList.add('not-found__title')
 
     const linkMainPage = getButton(buttonTypes.link, {
-        text: 'Повернутися на головну >',
+        text: 'Повернутися на головну',
         href: '/',
         listener:function (event){
             event.preventDefault();

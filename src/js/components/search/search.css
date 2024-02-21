@@ -1,0 +1,51 @@
+.search__form{
+    margin-right: 10px;
+    margin-left: auto;
+}
+.search__content{
+    max-width: 346px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3px 12px;
+    border: 2px solid #6e6e73;
+    border-radius: 8px;
+    transition: border .4s;
+}
+.search__content:focus-within{
+    border: 2px solid #0071e3;
+}
+.search__icon{
+
+    display: flex;
+    padding: 0 10px 0 0;
+    margin: 0;
+}
+.search__icon svg{
+    margin-top: 5px;
+    width: 15px;
+    height: 25px;
+
+}
+.search__input{
+    font-size: 17px;
+    font-family: inherit;
+    color: inherit;
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+}
+
+.search-clear__icon{
+    width: 15px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.search-clear__icon svg{
+    display: none;
+    width: 15px;
+    height: 15px;
+
+}

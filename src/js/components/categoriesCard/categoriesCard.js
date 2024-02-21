@@ -2,8 +2,10 @@
 import {router} from "../../main";
 
 import './categoriesCard.css'
+import {categoriesStore} from "../categoriesSection/categoriesSection";
 
-export function getCategoriesCard(image, title){
+
+export function getCategoriesCard(image, title, category){
     const itemCategories = document.createElement('li');
     itemCategories.classList.add('categories-list__item');
 
@@ -13,9 +15,11 @@ export function getCategoriesCard(image, title){
 
     if (decodeURI(itemCategoriesLink.href).endsWith(router.current[0].url )&& router.current[0].url){
         itemCategoriesLink.classList.add('active');
+        categoriesStore.activeCategory = category;
     }
     itemCategoriesLink.addEventListener('click', function (event){
         event.preventDefault();
+        categoriesStore.activeCategory = category;
         router.navigate(`/catalog/${title}`);
     })
 

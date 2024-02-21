@@ -4,10 +4,23 @@ html{
 *, *::before, *::after{
     box-sizing: inherit;
 }
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(22, 22, 23, 0.8);
+    border-radius: 1px;
+}
+::-webkit-scrollbar-track{
+    background-color: #fafafa;
+}
 a{
     font-size: 14px;
     color: #fff;
     text-decoration: none;
+}
+p{
+    margin: 0;
 }
 img{
     max-width: 100%

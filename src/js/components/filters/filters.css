@@ -1,0 +1,14 @@
+.filters{
+    font-size: 17px;
+    width: 0;
+    overflow: auto;
+    height: 100%;
+    z-index: 11000;
+    background: transparent;
+    transition: width .5s ease-in, padding .5s;
+}
+.filters.active{
+    padding: 40px 35px;
+    border: 1px solid #d2d2d7;
+    width: 240px;
+}

@@ -44,8 +44,15 @@
     background: none;
     color: #0066cc;
     text-decoration: none;
-    transition: color .4s, text-decoration 4s;
+    transition: color .4s, text-decoration .4s;
 }
+.btn__link:after{
+    content: '>';
+    position: absolute;
+    padding-top: 2px;
+    padding-left: 4px;
+}
+
 .btn__link:hover{
     text-decoration: underline;
     color: #0077ed;
